@@ -16,6 +16,8 @@ public class ToFindFactorial {
 
             fact=fact*i;
         }
+
         System.out.println(fact);
+
     }
 }

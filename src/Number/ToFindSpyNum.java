@@ -6,7 +6,7 @@ public class ToFindSpyNum {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter the number to check the spy number");
-        int n= sc.nextInt();
+        int n= sc.nextInt();//123
 
         int prod=1;
         int sum=0;
