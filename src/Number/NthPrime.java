@@ -3,25 +3,28 @@ package Number;
 import java.util.Scanner;
 
 public class NthPrime {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number perfect");
-        int n = sc.nextInt();//13
-        int count=0;
 
-
-        for (int i = 1; i < n; i++) {
-
-
-            if (n%i==0){
-
-                count++;
+        public static void main(String[] args) {
+            int num=1, count=0, i;
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter a number to find the nth prime number: ");
+            int n = sc.nextInt();
+            while (count < n)
+            {
+                num=num+1;
+                for (i = 2; i <= num; i++)
+                {
+                    if (num % i == 0)
+                    {
+                        break;
+                    }
+                }
+                if ( i == num)
+                {
+                    count = count+1;
+                }
             }
-
-        }
-        if (count==2) {
-
-
+            System.out.println("Value of nth prime is: " + num);
         }
     }
-}
+
