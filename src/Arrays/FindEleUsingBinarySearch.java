@@ -18,11 +18,6 @@ public class FindEleUsingBinarySearch {
         Arrays.sort(a);
         System.out.println("Enter the elemnt to find");
         int key= sc.nextInt();
-//        for (int i = 0; i <a.length ; i++) {
-//            System.out.println(a[i]);
-//        }
-
-
         int l=0;
         int h=a.length;
         while (l<=h){
